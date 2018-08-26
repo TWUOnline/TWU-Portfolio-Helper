@@ -31,7 +31,7 @@ This shortcode will output a full index of the portfolio structure according to 
 Will list the full taxonomy, each linked to its archive, with a display of how many artifacts are within that type. The following parameters can be used in the shortcode
 
 * `show_description=1` Show the description of the artifact type (if available). Default is `1` to show, set to `0` to hide.
-* `show_chilcren=1` Display one level of sub-types. Default is `1` to show, set to `0` to hide.
+* `show_children=1` Display one level of sub-types. Default is `1` to show, set to `0` to hide.
 * `hide_empty=0` Only list types that are used in artifacts. Default is `0` to show all available, set to `1` to show only ones that are used.
 * `order_by='id'` How the types are sorter; `id` (default) is by order they ere created; other options include `name` to sort by title, `count` by count of items.
 * `order` direction of sorting; `ASC` (default) is alphabetical or increasing; used `DESC` for reverse
