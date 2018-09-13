@@ -63,7 +63,7 @@ These parameters are available (note `defaults`).
 * **display_author** Display the author name; default =`false`
 * **display_thumbnail** Display featured image; default =`true`
 * **columns** Number of columns for grid view;  default = `2`
-* **ccount** Show this many artifacts (use -1 for all); default = `3`
+* **count** Show this many artifacts (use -1 for all); default = `3`
 * **order**   How to order, asc for ascending, desc for descending; default = `asc`
 * **orderby**  What to order by, values can be 'date', 'title', 'rand', or 'author'; default = `date`
 
