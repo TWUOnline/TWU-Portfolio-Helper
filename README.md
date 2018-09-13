@@ -59,13 +59,13 @@ These parameters are available (note `defaults`).
 
 * **display_types** Output the categories of artifacts;  default = `true`
 * **display_tags**  Output the tags of artifacts; default = `true`
-* **display_content* Output the excerpt;  default =`true`
-* **display_author* Display the author name; default =`false`
-* **display_thumbnail* Display featured image; default =`true`
-* **columns* Number of columns for grid view;  default = `2`
-* **ccount* Show this many artifacts (use -1 for all); default = `3`
-* **order*   How to order, asc for ascending, desc for descending; default = `asc`
-* *orderby*'  What to order by, values can be 'date', 'title', 'rand', or 'author'; default = `date`
+* **display_content** Output the excerpt;  default =`true`
+* **display_author** Display the author name; default =`false`
+* **display_thumbnail** Display featured image; default =`true`
+* **columns** Number of columns for grid view;  default = `2`
+* **ccount** Show this many artifacts (use -1 for all); default = `3`
+* **order**   How to order, asc for ascending, desc for descending; default = `asc`
+* **orderby**  What to order by, values can be 'date', 'title', 'rand', or 'author'; default = `date`
 
 A Page listing the most recent ones in a 3 item per row grid
 
