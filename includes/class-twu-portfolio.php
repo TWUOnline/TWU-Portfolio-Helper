@@ -152,10 +152,12 @@ class Twu_Portfolio {
 	 */
 	private function define_admin_hooks() {
 
-		// $plugin_admin = new Twu_Portfolio_Admin( $this->get_plugin_name(), $this->get_version() );
+		//$plugin_admin = new Twu_Portfolio_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		//$this->loader->add_action( 'admin_notices', $plugin_admin, 'twu_portfolio_admin_notice' );
+		
+		//set_transient( 'twu-portfolio-admin-notice', true, 5 );
+
 
 	}
 
@@ -171,9 +173,8 @@ class Twu_Portfolio {
 		$plugin_public = new Twu_Portfolio_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'init', $plugin_public, 'register_post_types' );
-		$this->loader->add_action( 'after_switch_theme', $plugin_public, 'flush_rules_on_switch' );
-		$this->loader->add_action( 'post_updated_messages', $plugin_public, 'updated_messages' );
-//		$this->loader->add_action(' wp_before_admin_bar_render', $plugin_public, 'twu_portfolio_add_toolbar_items', 999 );		
+		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
+		$this->loader->add_action( 'post_updated_messages', $plugin_public, 'updated_messages' );		
 		$this->loader->add_filter( 'manage_tru-portfolio_posts_columns', $plugin_public, 'edit_admin_columns' );
 
 	}
